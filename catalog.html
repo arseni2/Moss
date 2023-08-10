@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/owl.carousel.min.js"
+            integrity="sha512-0q0AkS2lU1mpLhP3fEHgfT6A5CGHI+zWv0YHp4nw7+y/Q/bV2XK9Cp0TyhlDe6ebR/7fX8VB0WOIuAUgMhyURg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.carousel.min.css"
+          integrity="sha512-X84rFrw99J6sJTX8VVpw+ie7vdJzx+EVi3pW44Ckv7g9PGgvV7Z3Rbz2PDn4/vZ96hW5s6PXUs8mgKW7f7xvTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.theme.default.min.css"
+          integrity="sha512-ZBrJGCV5/KNZZjrsmfEdMRuIO0LHJoW2oAJwy7eRQA0pzj1XIoUgzO+99binsnDyU+WfVqVJcj7FVXLBTB5xFw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="script.js"></script>
+</head>
+<body>
+<header class="header">
+    <img src="assets/Logo.svg"/>
+
+    <div class="header_wrapper">
+        <a href="tel:+7 911 001 4428" class="df_gp10_flace">
+            <img src="assets/PhoneIcon.svg"/>
+            <h3 style="font-size: 16px">+7 (911) 001-44-28</h3>
+        </a>
+
+        <a class="df_gp10_flace">
+            <img src="assets/WhatsAppIconBG.svg"/>
+            <h3 style="font-size: 16px">Консультация в WhatsApp</h3>
+        </a>
+
+        <div>
+            <img class="btn_icon_header" onclick="showModalWindow('modal-window-1')" src="assets/FavIcon.svg" alt="">
+            <img class="btn_icon_header" src="assets/CartIcon.svg" alt="">
+        </div>
+        <div id="modal-window-1" class="modal-window">
+            <div class="modal-window-content">
+                <div class="modal-window-header">
+                    <div class="modal-window-header-close-btn">xxx</div>
+                </div>
+                test
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="catalog">
+    <h1 style="text-align: start;">ЗЕЛЁНЫЕ</h1>
+    <div class="cart">
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: start;">НАБОРЫ И АССОРТИ</h1>
+    <div class="cart">
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: start;">ЦВЕТНЫЕ</h1>
+    <div class="cart">
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+        <div class="blk_wht" style="width: 271px; height: 406px;flex-wrap: wrap; justify-content: center; padding: 0%;">
+            <img class="cart_img" style="width: 100%;" src="assets/Moss.png" alt="">
+            <h3 style="text-align: center; padding: 10px;">мох зелёный</h3>
+            <div style="display:flex; justify-content: center; flex-direction: row; align-items: baseline">
+                <p class="zena">5700 ₽</p>
+                <p>/кг</p>
+            </div>
+            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+                <p class="btn_podrobnee">Подробнее</p>
+            </div>
+            <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
+                <div class="row">
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                        -
+                    </button>
+                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                        1</h3>
+                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                        +
+                    </button>
+                </div>
+                <div class="btn_filled">
+                    в корзину
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="row wt100p footer" style="flex-wrap: wrap">
+    <img src="assets/Logo.svg" alt="">
+    <div class="column">
+        <h2>Каталог</h2>
+        <h3><a>Мох</a></h3>
+    </div>
+
+    <div class="column">
+        <h2><a>Документы</a></h2>
+        <h3><a>Реквизиты</a></h3>
+        <h3><a>Политика конфиденциальности</a></h3>
+    </div>
+
+    <div class="column">
+        <h2>Компания</h2>
+        <h3><a>О «Moss»</a></h3>
+        <h3><a>Контакты</a></h3>
+        <h3><a>Соцсети</a></h3>
+    </div>
+
+    <div class="column">
+        <h2>Полезное</h2>
+        <h3><a>Частые вопросы</a></h3>
+    </div>
+
+    <div class="column gp10">
+        <div class="df_gp10_flace">
+            <img style="width: 30px; height: 30px" src="assets/PhoneIcon.svg" alt="">
+            <h2 style="margin-bottom: 0px">+7(911) 001-44-28</h2>
+        </div>
+
+        <div class="df_gp10_flace">
+            <img style="width: 30px; height: 30px; margin-top: 5px" src="assets/email.png" alt="">
+            <h2 style="margin-bottom: 0px">moss@mail.ru</h2>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
