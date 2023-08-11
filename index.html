@@ -16,16 +16,49 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.theme.default.min.css"
           integrity="sha512-ZBrJGCV5/KNZZjrsmfEdMRuIO0LHJoW2oAJwy7eRQA0pzj1XIoUgzO+99binsnDyU+WfVqVJcj7FVXLBTB5xFw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="script.js"></script>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script defer src="script.js"></script>
 </head>
 <body>
 <header class="header">
+    <div id="modal-window-cart" class="modal-window">
+        <div class="modal-window-content">
+            <div class="modal-window-header">
+                <div class="modal-window-header-close-btn cp">
+                    <img src="assets/x-button.png" alt="close">
+                </div>
+            </div>
+            cart
+        </div>
+    </div>
+    <div id="modal-window-1" class="modal-window">
+        <div class="modal-window-content">
+            <div class="modal-window-header">
+                <div class="modal-window-header-close-btn cp">
+                    <img src="assets/x-button.png" alt="close">
+                </div>
+            </div>
+            favorite
+        </div>
+    </div>
+    <div id="modal-window-product" class="modal-window">
+        <div class="modal-window-content">
+            <div class="modal-window-header">
+                <div class="modal-window-header-close-btn cp">
+                    <img src="assets/x-button.png" alt="close">
+                </div>
+            </div>
+            product
+        </div>
+    </div>
+
     <img src="assets/Logo.svg"/>
 
     <div class="header_wrapper">
-        <a href="tel:+7 911 001 4428" class="df_gp10_flace">
+        <a href="tel:+7(911) 001-44-28" class="df_gp10_flace">
             <img src="assets/PhoneIcon.svg"/>
-            <h3 style="font-size: 16px">+7 (911) 001-44-28</h3>
+            <h3 style="font-size: 16px">+7(911) 001-44-28</h3>
         </a>
 
         <a class="df_gp10_flace">
@@ -35,18 +68,30 @@
 
         <div>
             <img class="btn_icon_header" onclick="showModalWindow('modal-window-1')" src="assets/FavIcon.svg" alt="">
-            <img class="btn_icon_header" src="assets/CartIcon.svg" alt="">
+            <img class="btn_icon_header" onclick="showModalWindow('modal-window-cart')" src="assets/CartIcon.svg"
+                 alt="">
         </div>
-        <div id="modal-window-1" class="modal-window">
-            <div class="modal-window-content">
-                <div class="modal-window-header">
-                    <div class="modal-window-header-close-btn">xxx</div>
-                </div>
-                test
-            </div>
+    </div>
+    <img onclick="openBurgerMenu()" class="burger_menu_btn cp" src="assets/BurgerMenu.png" alt="">
+    <div class="popup" id="popup">
+        <a href="tel:+7 911 001 4428" class="df_gp10_flace">
+            <img src="assets/PhoneIcon.svg"/>
+            <h3 style="font-size: 16px">+7 (911) 001-44-28</h3>
+        </a>
+
+        <a class="df_gp10_flace">
+            <img src="assets/WhatsAppIconBG.svg"/>
+            <h3 style="font-size: 16px">Консультация в WhatsApp</h3>
+        </a>
+        <div style="display: flex; justify-content: space-between">
+            <img class="btn_icon_header" onclick="showModalWindow('modal-window-1')" src="assets/FavIcon.svg" alt="">
+            <img class="btn_icon_header" onclick="showModalWindow('modal-window-cart')" src="assets/CartIcon.svg"
+                 alt="">
         </div>
     </div>
 </header>
+
+
 
 <section style="margin-top: 40px" class="cooperation">
     <div style="flex-wrap: wrap; gap: 20px;" class="df_gp10_flace dfcenter">
@@ -63,9 +108,9 @@
         </div>
         <div style="flex-direction: column" class="mw600">
             <div style="display: flex; gap: 20px; flex-wrap: wrap">
-                <img class="br20" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
-                <img class="br20" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
-                <img class="br20" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
+                <img class="br20 img_full_size_mobile" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
+                <img class="br20 img_full_size_mobile" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
+                <img class="br20 img_full_size_mobile" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
             </div>
 
             <div class="blk_wht mt20">
@@ -75,8 +120,9 @@
     </div>
 </section>
 
-<section style="display: flex; justify-content: center">
-    <img src="assets/Advantages.webp" style="max-width: 1200px; height: auto; width: 100%" alt="">
+<section style="">
+    <h1>Наши преимущества</h1>
+    <img src="assets/Advantages.webp" style="margin-left: auto; margin-right: auto; display: flex; max-width: 1200px; height: auto; width: 100%" alt="">
 </section>
 
 <section>
@@ -89,7 +135,8 @@
                 <p class="zena">5700 ₽</p>
                 <p>/кг</p>
             </div>
-            <div class="box_podrobnee" style="display: flex; justify-content: center;align-items: center; ">
+            <div class="box_podrobnee" onclick="showModalWindow('modal-window-product')"
+                 style="display: flex; justify-content: center;align-items: center; ">
                 <p class="btn_podrobnee">Подробнее</p>
             </div>
             <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
@@ -173,14 +220,14 @@
             </div>
             <div style="display: flex; flex-direction: row;justify-content: space-between; padding: 20px;">
                 <div class="row">
-                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 20px 0 0 20px; width: 20px;justify-content: center;display: flex; align-items: center; border-right: none ;">
+                    <div class="product_btn_minus">
                         -
-                    </button>
-                    <h3 style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;width: 40px;justify-content: center;display: flex;align-items: center;border-right: none;border-left: none ;">
+                    </div>
+                    <h3 class="product_btn_count">
                         1</h3>
-                    <button style="box-sizing: border-box;background: #FFFFFF;border: 1px solid #126E3D;border-radius: 0 20px 20px 0;width: 20px;justify-content: center;display: flex;align-items: center;border-left: none ;">
+                    <div class="product_btn_plus">
                         +
-                    </button>
+                    </div>
                 </div>
                 <div class="btn_filled">
                     в корзину
@@ -190,7 +237,6 @@
 
     </div>
 </section>
-
 
 
 <section class="social_network">
@@ -289,25 +335,58 @@
     <h1>
         ОТВЕТЫ НА ВОПРОСЫ
     </h1>
-    <div class="faq_box">
-        <div class="photo">photo</div>
-        <div class="photo">photo</div>
-        <div class="column">
-            <div>
-                <h2>text</h2>
-                <h2>text</h2>
-                <h2>text</h2>
-                <h2>text</h2>
-                <h2>text</h2>
-            </div>
+    <div class="faq_box blk_wht">
+        <div>
+            <img class="img_full_size_mobile" src="assets/Moss.png" alt="">
         </div>
         <div>
-            <h2 class="elipse">></h2>
-            <h2 class="elipse">></h2>
-            <h2 class="elipse">></h2>
-            <h2 class="elipse">></h2>
-            <h2 class="elipse">></h2>
+            <img class="img_full_size_mobile" src="assets/Moss.png" alt="">
         </div>
+        <div class="row faq_questions df_gp10_flace">
+            <div class="column" style="gap: 6px">
+                <div class="df_gp10_flace">
+                    <h2>Где вы находитесь?</h2>
+                    <div class="elipse">
+                        <h2>
+                            +
+                        </h2>
+                    </div>
+                </div>
+                <div class="df_gp10_flace">
+                    <h2>Где вы находитесь?</h2>
+                    <div class="elipse">
+                        <h2>
+                            +
+                        </h2>
+                    </div>
+                </div>
+                <div class="df_gp10_flace">
+                    <h2>Где вы находитесь?</h2>
+                    <div class="elipse">
+                        <h2>
+                            +
+                        </h2>
+                    </div>
+                </div>
+                <div class="df_gp10_flace">
+                    <h2>Где вы находитесь?</h2>
+                    <div class="elipse">
+                        <h2>
+                            +
+                        </h2>
+                    </div>
+                </div>
+                <div class="df_gp10_flace">
+                    <h2>Где вы находитесь?</h2>
+                    <div class="elipse">
+                        <h2>
+                            +
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -316,9 +395,9 @@
     <div style="flex-wrap: wrap" class="df_gp10_flace dfcenter">
         <div style="flex-direction: column" class="mw600">
             <div style="display: flex; gap: 20px; flex-wrap: wrap">
-                <img class="br20" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
-                <img class="br20" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
-                <img class="br20" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
+                <img class="br20 img_full_size_mobile" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
+                <img class="br20 img_full_size_mobile" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
+                <img class="br20 img_full_size_mobile" style="max-width: 200px; width: 100%; height: auto" src="assets/Moss.png" alt="">
             </div>
 
             <div class="blk_wht mt20">
@@ -340,6 +419,7 @@
     </div>
 </section>
 
+
 <section class="faq_box ebychii_blk" style="max-width: 800px; display: flex; margin-left: auto; margin-right: auto;">
     <div class="faq" style="align-items: center; justify-content: center; flex-wrap: wrap;">
         <img class="img_about" style="border-radius: 20px; max-width: 500px; height: 440px;" src="assets/photo_2023-08-08_10-46-27.jpg" alt="">
@@ -354,6 +434,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="df">
     <h1>Отзывы покупателей</h1>
@@ -515,6 +596,10 @@
                 items: 1,
                 nav: false
             },
+            300: {
+                items: 1,
+                nav: false
+            },
             500: {
                 items: 1,
                 nav: false
@@ -543,11 +628,11 @@
             СВЯЖИТЕСЬ С НАМИ
         </h2>
         <div class="row" style="justify-content: space-between;">
-            <div style="align-items: flex-end; display: flex">
+            <div class="left_side_form" style="align-items: flex-end; display: flex">
                 <img width="66" height="66" src="assets/WhatsAppIconBG.svg">
                 <img width="66" class="ml10" height="66" src="assets/TGIconBG.svg">
             </div>
-            <div class="column gap20" >
+            <div class="column gap20 right_side_form">
                 <div>
                     <input placeholder="text">
                 </div>
@@ -572,40 +657,42 @@
     </div>
 </section>
 
-<footer class="row wt100p footer" style="flex-wrap: wrap">
-    <img src="assets/Logo.svg" alt="">
-    <div class="column">
-        <h2>Каталог</h2>
-        <h3><a>Мох</a></h3>
-    </div>
-
-    <div class="column">
-        <h2><a>Документы</a></h2>
-        <h3><a>Реквизиты</a></h3>
-        <h3><a>Политика конфиденциальности</a></h3>
-    </div>
-
-    <div class="column">
-        <h2>Компания</h2>
-        <h3><a>О «Moss»</a></h3>
-        <h3><a>Контакты</a></h3>
-        <h3><a>Соцсети</a></h3>
-    </div>
-
-    <div class="column">
-        <h2>Полезное</h2>
-        <h3><a>Частые вопросы</a></h3>
-    </div>
-
-    <div class="column gp10">
-        <div class="df_gp10_flace">
-            <img style="width: 30px; height: 30px" src="assets/PhoneIcon.svg" alt="">
-            <h2 style="margin-bottom: 0px">+7(911) 001-44-28</h2>
+<footer class="row wt100p footer">
+    <img class="footer_logo" src="assets/Logo.svg" alt="">
+    <div class="footer_wrapper row">
+        <div class="column">
+            <h2>Каталог</h2>
+            <h3><a>Мох</a></h3>
         </div>
 
-        <div class="df_gp10_flace">
-            <img style="width: 30px; height: 30px; margin-top: 5px" src="assets/email.png" alt="">
-            <h2 style="margin-bottom: 0px">moss@mail.ru</h2>
+        <div class="column">
+            <h2>Документы</h2>
+            <h3><a>Реквизиты</a></h3>
+            <h3 style="width: 171px"><a>Политика конфиденциальности</a></h3>
+        </div>
+
+        <div class="column margin_for_mobile">
+            <h2>Компания</h2>
+            <h3><a>О «Moss»</a></h3>
+            <h3><a>Контакты</a></h3>
+            <h3><a>Соцсети</a></h3>
+        </div>
+
+        <div class="column margin_for_mobile" style="width: 171px; display: block">
+            <h2>Полезное</h2>
+            <h3><a>Частые вопросы</a></h3>
+        </div>
+
+        <div class="column gp10">
+            <div class="df_gp10_flace">
+                <img style="width: 30px; height: 30px" src="assets/PhoneIcon.svg" alt="">
+                <h2 style="margin-bottom: 0px">+7(962) 684-34-51</h2>
+            </div>
+
+            <div class="df_gp10_flace">
+                <img style="width: 30px; height: 30px; margin-top: 5px" src="assets/email.png" alt="">
+                <h2 style="margin-bottom: 0px">info@russianmoss.ru</h2>
+            </div>
         </div>
     </div>
 </footer>
