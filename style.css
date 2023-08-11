@@ -603,3 +603,16 @@ img {
     }
 }
 
+:root {
+    --min-width: 200;
+    --max-width: 1900;
+    --step: 100;
+  }
+  
+@media screen and (max-width: 600px) {
+    .ebychii_blk {
+        flex-wrap: wrap;
+    }
+}
+  
+  
