@@ -20,12 +20,43 @@
 </head>
 <body>
 <header class="header">
+    <div id="modal-window-cart" class="modal-window">
+        <div class="modal-window-content">
+            <div class="modal-window-header">
+                <div class="modal-window-header-close-btn cp">
+                    <img src="assets/x-button.png" alt="close">
+                </div>
+            </div>
+            cart
+        </div>
+    </div>
+    <div id="modal-window-1" class="modal-window">
+        <div class="modal-window-content">
+            <div class="modal-window-header">
+                <div class="modal-window-header-close-btn cp">
+                    <img src="assets/x-button.png" alt="close">
+                </div>
+            </div>
+            favorite
+        </div>
+    </div>
+    <div id="modal-window-product" class="modal-window">
+        <div class="modal-window-content">
+            <div class="modal-window-header">
+                <div class="modal-window-header-close-btn cp">
+                    <img src="assets/x-button.png" alt="close">
+                </div>
+            </div>
+            product
+        </div>
+    </div>
+    
     <img src="assets/Logo.svg"/>
 
     <div class="header_wrapper">
-        <a href="tel:+7 911 001 4428" class="df_gp10_flace">
+        <a href="tel:+7(911) 001-44-28" class="df_gp10_flace">
             <img src="assets/PhoneIcon.svg"/>
-            <h3 style="font-size: 16px">+7 (911) 001-44-28</h3>
+            <h3 style="font-size: 16px">+7(911) 001-44-28</h3>
         </a>
 
         <a class="df_gp10_flace">
@@ -35,15 +66,25 @@
 
         <div>
             <img class="btn_icon_header" onclick="showModalWindow('modal-window-1')" src="assets/FavIcon.svg" alt="">
-            <img class="btn_icon_header" src="assets/CartIcon.svg" alt="">
+            <img class="btn_icon_header" onclick="showModalWindow('modal-window-cart')" src="assets/CartIcon.svg"
+                 alt="">
         </div>
-        <div id="modal-window-1" class="modal-window">
-            <div class="modal-window-content">
-                <div class="modal-window-header">
-                    <div class="modal-window-header-close-btn">xxx</div>
-                </div>
-                test
-            </div>
+    </div>
+    <img onclick="openBurgerMenu()" class="burger_menu_btn cp" src="assets/BurgerMenu.png" alt="">
+    <div class="popup" id="popup">
+        <a href="tel:+7 911 001 4428" class="df_gp10_flace">
+            <img src="assets/PhoneIcon.svg"/>
+            <h3 style="font-size: 16px">+7 (911) 001-44-28</h3>
+        </a>
+
+        <a class="df_gp10_flace">
+            <img src="assets/WhatsAppIconBG.svg"/>
+            <h3 style="font-size: 16px">Консультация в WhatsApp</h3>
+        </a>
+        <div style="display: flex; justify-content: space-between">
+            <img class="btn_icon_header" onclick="showModalWindow('modal-window-1')" src="assets/FavIcon.svg" alt="">
+            <img class="btn_icon_header" onclick="showModalWindow('modal-window-cart')" src="assets/CartIcon.svg"
+                 alt="">
         </div>
     </div>
 </header>
@@ -502,40 +543,42 @@
     </div>
 </section>
 
-<footer class="row wt100p footer" style="flex-wrap: wrap">
-    <img src="assets/Logo.svg" alt="">
-    <div class="column">
-        <h2>Каталог</h2>
-        <h3><a>Мох</a></h3>
-    </div>
-
-    <div class="column">
-        <h2><a>Документы</a></h2>
-        <h3><a>Реквизиты</a></h3>
-        <h3><a>Политика конфиденциальности</a></h3>
-    </div>
-
-    <div class="column">
-        <h2>Компания</h2>
-        <h3><a>О «Moss»</a></h3>
-        <h3><a>Контакты</a></h3>
-        <h3><a>Соцсети</a></h3>
-    </div>
-
-    <div class="column">
-        <h2>Полезное</h2>
-        <h3><a>Частые вопросы</a></h3>
-    </div>
-
-    <div class="column gp10">
-        <div class="df_gp10_flace">
-            <img style="width: 30px; height: 30px" src="assets/PhoneIcon.svg" alt="">
-            <h2 style="margin-bottom: 0px">+7(911) 001-44-28</h2>
+<footer class="row wt100p footer">
+    <img class="footer_logo" src="assets/Logo.svg" alt="">
+    <div class="footer_wrapper row">
+        <div class="column">
+            <h2>Каталог</h2>
+            <h3><a>Мох</a></h3>
         </div>
 
-        <div class="df_gp10_flace">
-            <img style="width: 30px; height: 30px; margin-top: 5px" src="assets/email.png" alt="">
-            <h2 style="margin-bottom: 0px">moss@mail.ru</h2>
+        <div class="column">
+            <h2>Документы</h2>
+            <h3><a>Реквизиты</a></h3>
+            <h3 style="width: 171px"><a>Политика конфиденциальности</a></h3>
+        </div>
+
+        <div class="column margin_for_mobile">
+            <h2>Компания</h2>
+            <h3><a>О «Moss»</a></h3>
+            <h3><a>Контакты</a></h3>
+            <h3><a>Соцсети</a></h3>
+        </div>
+
+        <div class="column margin_for_mobile" style="width: 171px; display: block">
+            <h2>Полезное</h2>
+            <h3><a>Частые вопросы</a></h3>
+        </div>
+
+        <div class="column gp10">
+            <div class="df_gp10_flace">
+                <img style="width: 30px; height: 30px" src="assets/PhoneIcon.svg" alt="">
+                <h2 style="margin-bottom: 0px">+7(962) 684-34-51</h2>
+            </div>
+
+            <div class="df_gp10_flace">
+                <img style="width: 30px; height: 30px; margin-top: 5px" src="assets/email.png" alt="">
+                <h2 style="margin-bottom: 0px">info@russianmoss.ru</h2>
+            </div>
         </div>
     </div>
 </footer>
