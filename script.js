@@ -12,3 +12,13 @@ let showModalWindow = (id) => {
         modalWindow.style.display = "none";
     })
 }
+
+let openBurgerMenu = () => {
+    let popup = document.querySelector('#popup')
+
+    if(popup.style.right === '-100%') {
+        popup.style.right = '0%'
+    } else {
+        popup.style.right = '-100%'
+    }
+}
