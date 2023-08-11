@@ -15,8 +15,7 @@ let showModalWindow = (id) => {
 
 let openBurgerMenu = () => {
     let popup = document.querySelector('#popup')
-
-    if(popup.style.right === '-100%') {
+    if(popup.style.right === '-100%' || popup.style.right === '') {
         popup.style.right = '0%'
     } else {
         popup.style.right = '-100%'

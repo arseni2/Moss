@@ -18,7 +18,7 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
 <header class="header">
@@ -118,8 +118,9 @@
     </div>
 </section>
 
-<section style="display: flex; justify-content: center">
-    <img src="assets/Advantages.webp" style="max-width: 1200px; height: auto; width: 100%" alt="">
+<section style="">
+    <h1>Наши преимущества</h1>
+    <img src="assets/Advantages.webp" style="margin-left: auto; margin-right: auto; display: flex; max-width: 1200px; height: auto; width: 100%" alt="">
 </section>
 
 <section>
@@ -332,42 +333,54 @@
     <h1>
         ОТВЕТЫ НА ВОПРОСЫ
     </h1>
-    <div class="faq_box">
-        <div class="photo">photo</div>
-        <div class="photo">photo</div>
-        <div class="row df_gp10_flace">
+    <div class="faq_box blk_wht">
+        <div>
+            <img class="img_full_size_mobile" src="assets/Moss.png" alt="">
+        </div>
+        <div>
+            <img class="img_full_size_mobile" src="assets/Moss.png" alt="">
+        </div>
+        <div class="row faq_questions df_gp10_flace">
             <div class="column" style="gap: 6px">
-                <h2>text</h2>
-                <h2>text</h2>
-                <h2>text</h2>
-                <h2>text</h2>
-                <h2>text</h2>
-            </div>
-            <div>
-                <div class="elipse">
-                    <h2>
-                        +
-                    </h2>
+                <div class="df_gp10_flace">
+                    <h2>Где вы находитесь?</h2>
+                    <div class="elipse">
+                        <h2>
+                            +
+                        </h2>
+                    </div>
                 </div>
-                <div class="elipse">
-                    <h2>
-                        +
-                    </h2>
+                <div class="df_gp10_flace">
+                    <h2>Где вы находитесь?</h2>
+                    <div class="elipse">
+                        <h2>
+                            +
+                        </h2>
+                    </div>
                 </div>
-                <div class="elipse">
-                    <h2>
-                        +
-                    </h2>
+                <div class="df_gp10_flace">
+                    <h2>Где вы находитесь?</h2>
+                    <div class="elipse">
+                        <h2>
+                            +
+                        </h2>
+                    </div>
                 </div>
-                <div class="elipse">
-                    <h2>
-                        +
-                    </h2>
+                <div class="df_gp10_flace">
+                    <h2>Где вы находитесь?</h2>
+                    <div class="elipse">
+                        <h2>
+                            +
+                        </h2>
+                    </div>
                 </div>
-                <div class="elipse">
-                    <h2>
-                        +
-                    </h2>
+                <div class="df_gp10_flace">
+                    <h2>Где вы находитесь?</h2>
+                    <div class="elipse">
+                        <h2>
+                            +
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -404,16 +417,17 @@
     </div>
 </section>
 
-<section class="comanda">
-    <div class="comanda_box">
+<!--<section class="comanda">-->
+<!--    <h1>О нас</h1>-->
+<!--    <div class="comanda_box">-->
 
-        <div class="comanda_photo_text"></div>
-        <div class="comanda_photo_text"></div>
-        <div class="comanda_photo_text"></div>
-        <div class="comanda_photo_text"></div>
+<!--        <div class="comanda_photo_text"></div>-->
+<!--        <div class="comanda_photo_text"></div>-->
+<!--        <div class="comanda_photo_text"></div>-->
+<!--        <div class="comanda_photo_text"></div>-->
 
-    </div>
-</section>
+<!--    </div>-->
+<!--</section>-->
 
 <section class="df">
     <h1>Отзывы покупателей</h1>
@@ -607,11 +621,11 @@
             СВЯЖИТЕСЬ С НАМИ
         </h2>
         <div class="row" style="justify-content: space-between;">
-            <div style="align-items: flex-end; display: flex">
+            <div class="left_side_form" style="align-items: flex-end; display: flex">
                 <img width="66" height="66" src="assets/WhatsAppIconBG.svg">
                 <img width="66" class="ml10" height="66" src="assets/TGIconBG.svg">
             </div>
-            <div class="column gap20">
+            <div class="column gap20 right_side_form">
                 <div>
                     <input placeholder="text">
                 </div>
