@@ -84,6 +84,12 @@ h1 {
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 406px) {
+    h1 {
+        font-size: 33px;
+    }
+}
+
 h2 {
     font-size: 24px;
     font-family: 'Inter', sans-serif;
@@ -233,7 +239,12 @@ img {
 .pl10 {
     padding-left: 10px;
 }
-
+.accordion_answer {
+    display: none;
+}
+.open {
+    display: flex;
+}
 .ml10 {
     margin-left: 10px;
 }

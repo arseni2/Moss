@@ -58,3 +58,16 @@ let calcToMetrs = () => {
         '                <option>Синий</option>\n' +
         '            </select>'
 }
+
+let accardionsTitles = document.querySelectorAll('.accordion_title')
+accardionsTitles.forEach(function (item) {
+    item.addEventListener('click', function () {
+        let btn = item.querySelector('.elipse').children[0]
+        let answer = item.parentNode.querySelector('.accordion_answer')
+        if(answer.classList.toggle('open')) {
+            btn.innerHTML = '-'
+        } else {
+            btn.innerHTML = '+'
+        }
+    })
+})
