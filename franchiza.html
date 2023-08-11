@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/owl.carousel.min.js"
+            integrity="sha512-0q0AkS2lU1mpLhP3fEHgfT6A5CGHI+zWv0YHp4nw7+y/Q/bV2XK9Cp0TyhlDe6ebR/7fX8VB0WOIuAUgMhyURg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.carousel.min.css"
+          integrity="sha512-X84rFrw99J6sJTX8VVpw+ie7vdJzx+EVi3pW44Ckv7g9PGgvV7Z3Rbz2PDn4/vZ96hW5s6PXUs8mgKW7f7xvTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.theme.default.min.css"
+          integrity="sha512-ZBrJGCV5/KNZZjrsmfEdMRuIO0LHJoW2oAJwy7eRQA0pzj1XIoUgzO+99binsnDyU+WfVqVJcj7FVXLBTB5xFw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="script.js"></script>
+</head>
+<body>
+<header class="header">
+    <img src="assets/Logo.svg"/>
+
+    <div class="header_wrapper">
+        <a href="tel:+7 911 001 4428" class="df_gp10_flace">
+            <img src="assets/PhoneIcon.svg"/>
+            <h3 style="font-size: 16px">+7 (911) 001-44-28</h3>
+        </a>
+
+        <a class="df_gp10_flace">
+            <img src="assets/WhatsAppIconBG.svg"/>
+            <h3 style="font-size: 16px">Консультация в WhatsApp</h3>
+        </a>
+
+        <div>
+            <img class="btn_icon_header" onclick="showModalWindow('modal-window-1')" src="assets/FavIcon.svg" alt="">
+            <img class="btn_icon_header" src="assets/CartIcon.svg" alt="">
+        </div>
+        <div id="modal-window-1" class="modal-window">
+            <div class="modal-window-content">
+                <div class="modal-window-header">
+                    <div class="modal-window-header-close-btn">xxx</div>
+                </div>
+                test
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="nasha_franshiza">
+    <h1>НАША ФРАНШИЗА</h1>
+    <div class="row" style="align-items: center; justify-content: center; flex-wrap: wrap;">
+        <img class="mw600" style="height: 400px;" src="assets/Ассорти в руке квадрат.jpg" alt="">
+        <div class="mw600" style="display: flex; justify-content: center; align-items: center; background: #DADADA; width: 400px; height: 400px; border-radius: 0 20px 20px 0;">text</div>
+    </div>
+</section>
+
+<section class="textCenter">
+    <div class="blk_wht mw600" style="margin-left: auto; margin-right: auto;">
+        <h2 style="text-align: left">
+            Благодарим вас за интерес к нашей франшизе.
+            Мы ценим ваше стремление присоединиться к нашей успешной сети.
+            Пожалуйста, заполните форму ниже,
+            чтобы мы могли связаться с вами 
+            и предоставить дополнительную информацию
+            о наших франшизных возможностях.
+        </h2>
+        <div class="row" style="justify-content: space-between;">
+            <div style="align-items: flex-end; display: flex">
+                <img width="66" height="66" src="assets/WhatsAppIconBG.svg">
+                <img width="66" class="ml10" height="66" src="assets/TGIconBG.svg">
+            </div>
+            <div class="column gap20" >
+                <div>
+                    <input placeholder="text">
+                </div>
+                <div>
+                    <input placeholder="text">
+                </div>
+                <div>
+                    <input placeholder="text">
+                </div>
+                <div>
+                    <input placeholder="text">
+                </div>
+                <div class="row" style="align-items: center;">
+                    <input id="checkbox_id" style="width: 25px" type="checkbox">
+                    <h3>
+                        <label for="checkbox_id">Согласелие с пользовательскит соглашением</label>
+                    </h3>
+                </div>
+                <div class="btn_filled">Оставить заявку</div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<footer class="row wt100p footer" style="flex-wrap: wrap">
+    <img src="assets/Logo.svg" alt="">
+    <div class="column">
+        <h2>Каталог</h2>
+        <h3><a>Мох</a></h3>
+    </div>
+
+    <div class="column">
+        <h2><a>Документы</a></h2>
+        <h3><a>Реквизиты</a></h3>
+        <h3><a>Политика конфиденциальности</a></h3>
+    </div>
+
+    <div class="column">
+        <h2>Компания</h2>
+        <h3><a>О «Moss»</a></h3>
+        <h3><a>Контакты</a></h3>
+        <h3><a>Соцсети</a></h3>
+    </div>
+
+    <div class="column">
+        <h2>Полезное</h2>
+        <h3><a>Частые вопросы</a></h3>
+    </div>
+
+    <div class="column gp10">
+        <div class="df_gp10_flace">
+            <img style="width: 30px; height: 30px" src="assets/PhoneIcon.svg" alt="">
+            <h2 style="margin-bottom: 0px">+7(911) 001-44-28</h2>
+        </div>
+
+        <div class="df_gp10_flace">
+            <img style="width: 30px; height: 30px; margin-top: 5px" src="assets/email.png" alt="">
+            <h2 style="margin-bottom: 0px">moss@mail.ru</h2>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
