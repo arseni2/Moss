@@ -240,10 +240,10 @@ img {
     padding-left: 10px;
 }
 .accordion_answer {
-    display: none;
+    visibility: hidden;
 }
 .open {
-    display: flex;
+    visibility: visible;
 }
 .ml10 {
     margin-left: 10px;
