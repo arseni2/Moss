@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/owl.carousel.min.js"
+            integrity="sha512-0q0AkS2lU1mpLhP3fEHgfT6A5CGHI+zWv0YHp4nw7+y/Q/bV2XK9Cp0TyhlDe6ebR/7fX8VB0WOIuAUgMhyURg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.carousel.min.css"
+          integrity="sha512-X84rFrw99J6sJTX8VVpw+ie7vdJzx+EVi3pW44Ckv7g9PGgvV7Z3Rbz2PDn4/vZ96hW5s6PXUs8mgKW7f7xvTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.theme.default.min.css"
+          integrity="sha512-ZBrJGCV5/KNZZjrsmfEdMRuIO0LHJoW2oAJwy7eRQA0pzj1XIoUgzO+99binsnDyU+WfVqVJcj7FVXLBTB5xFw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="script.js"></script>
+</head>
+<body>
+<header class="header">
+    <img src="assets/Logo.svg"/>
+
+    <div class="header_wrapper">
+        <a href="tel:+7 911 001 4428" class="df_gp10_flace">
+            <img src="assets/PhoneIcon.svg"/>
+            <h3 style="font-size: 16px">+7 (911) 001-44-28</h3>
+        </a>
+
+        <a class="df_gp10_flace">
+            <img src="assets/WhatsAppIconBG.svg"/>
+            <h3 style="font-size: 16px">Консультация в WhatsApp</h3>
+        </a>
+
+        <div>
+            <img class="btn_icon_header" onclick="showModalWindow('modal-window-1')" src="assets/FavIcon.svg" alt="">
+            <img class="btn_icon_header" src="assets/CartIcon.svg" alt="">
+        </div>
+        <div id="modal-window-1" class="modal-window">
+            <div class="modal-window-content">
+                <div class="modal-window-header">
+                    <div class="modal-window-header-close-btn">xxx</div>
+                </div>
+                test
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="faq_box">
+    <div class="faq" style="align-items: center; justify-content: center; flex-wrap: wrap;">
+        <img class="mw600" style="border-radius: 20px;" src="assets/Ассорти в руке квадрат.jpg" alt="">
+    </div>
+    <div class="column">
+        <div style="text-align: center;">
+            <h2 style="padding: 20px;">МОХ В РУКАДЕЛИИ</h2>
+            <h3 style="padding: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales magna tortor, eget dictum nisi commodo vel. Vivamus ultrices in nisl convallis faucibus. Vivamus eget lacus id eros sollicitudin consequat. Vestibulum vel interdum mi, quis eleifend neque. Mauris elementum lectus eget felis iaculis vestibulum. Morbi sed justo quis nibh luctus dignissim. Phasellus sodales maximus nibh, in maximus leo suscipit ut. Nunc justo sem, feugiat ut sem et, tempus efficitur risus. Maecenas sollicitudin, ligula vel vehicula porta, eros nibh pharetra lacus, eu maximus diam sapien id sem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales magna tortor, eget dictum nisi commodo vel. Vivamus ultrices in nisl convallis faucibus. Vivamus eget lacus id eros sollicitudin consequat. Vestibulum vel interdum mi, quis eleifend neque. Mauris elementum lectus eget felis iaculis vestibulum. Morbi sed justo quis nibh luctus dignissim. Phasellus sodales maximus nibh, in maximus leo suscipit ut. Nunc justo sem, feugiat ut sem et, tempus efficitur risus. Maecenas sollicitudin, ligula vel vehicula porta, eros nibh pharetra lacus, eu maximus diam sapien id sem.</h3>
+            <a class="btn_filled cooperation_block_btn" style="padding: 20px;">Подробнее</a>
+        </div>
+    </div>
+</section>
+
+    
+<footer class="row wt100p footer" style="flex-wrap: wrap">
+    <img src="assets/Logo.svg" alt="">
+    <div class="column">
+        <h2>Каталог</h2>
+        <h3><a>Мох</a></h3>
+    </div>
+
+    <div class="column">
+        <h2><a>Документы</a></h2>
+        <h3><a>Реквизиты</a></h3>
+        <h3><a>Политика конфиденциальности</a></h3>
+    </div>
+
+    <div class="column">
+        <h2>Компания</h2>
+        <h3><a>О «Moss»</a></h3>
+        <h3><a>Контакты</a></h3>
+        <h3><a>Соцсети</a></h3>
+    </div>
+
+    <div class="column">
+        <h2>Полезное</h2>
+        <h3><a>Частые вопросы</a></h3>
+    </div>
+
+    <div class="column gp10">
+        <div class="df_gp10_flace">
+            <img style="width: 30px; height: 30px" src="assets/PhoneIcon.svg" alt="">
+            <h2 style="margin-bottom: 0px">+7(911) 001-44-28</h2>
+        </div>
+
+        <div class="df_gp10_flace">
+            <img style="width: 30px; height: 30px; margin-top: 5px" src="assets/email.png" alt="">
+            <h2 style="margin-bottom: 0px">moss@mail.ru</h2>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
