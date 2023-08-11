@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/owl.carousel.min.js"
+            integrity="sha512-0q0AkS2lU1mpLhP3fEHgfT6A5CGHI+zWv0YHp4nw7+y/Q/bV2XK9Cp0TyhlDe6ebR/7fX8VB0WOIuAUgMhyURg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.carousel.min.css"
+          integrity="sha512-X84rFrw99J6sJTX8VVpw+ie7vdJzx+EVi3pW44Ckv7g9PGgvV7Z3Rbz2PDn4/vZ96hW5s6PXUs8mgKW7f7xvTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.5/assets/owl.theme.default.min.css"
+          integrity="sha512-ZBrJGCV5/KNZZjrsmfEdMRuIO0LHJoW2oAJwy7eRQA0pzj1XIoUgzO+99binsnDyU+WfVqVJcj7FVXLBTB5xFw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="script.js"></script>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh">
+<header class="header">
+    <img src="assets/Logo.svg"/>
+
+    <div class="header_wrapper">
+        <a href="tel:+7 911 001 4428" class="df_gp10_flace">
+            <img src="assets/PhoneIcon.svg"/>
+            <h3 style="font-size: 16px">+7 (911) 001-44-28</h3>
+        </a>
+
+        <a class="df_gp10_flace">
+            <img src="assets/WhatsAppIconBG.svg"/>
+            <h3 style="font-size: 16px">Консультация в WhatsApp</h3>
+        </a>
+
+        <div>
+            <img class="btn_icon_header" onclick="showModalWindow('modal-window-1')" src="assets/FavIcon.svg" alt="">
+            <img class="btn_icon_header" src="assets/CartIcon.svg" alt="">
+        </div>
+        <div id="modal-window-1" class="modal-window">
+            <div class="modal-window-content">
+                <div class="modal-window-header">
+                    <div class="modal-window-header-close-btn">xxx</div>
+                </div>
+                test
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="faq_box">
+    <div class="blk_wht row gap20 wt100p"
+         style="max-width: 1160px; display: flex; flex-wrap: wrap; justify-content: center">
+        <img class="br20 wt100p" src="assets/Moss.png" alt="" style="max-width: 500px">
+        <div class="column" style="max-width: 600px">
+            <h2 class="textCenter">Мох в рукоделии</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales magna tortor, eget dictum nisi
+                commodo vel. Vivamus ultrices in nisl convallis faucibus. Vivamus eget lacus id eros sollicitudin
+                consequat. Vestibulum vel interdum mi, quis eleifend neque. Mauris elementum lectus eget felis iaculis
+                vestibulum. Morbi sed justo quis nibh luctus dignissim. Phasellus sodales maximus nibh, in maximus leo
+                suscipit ut. Nunc justo sem, feugiat ut sem et, tempus efficitur risus. Maecenas sollicitudin, ligula
+                vel vehicula porta, eros nibh pharetra lacus, eu maximus diam sapien id sem.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Donec sodales magna tortor, eget dictum nisi commodo vel. Vivamus ultrices
+                in nisl convallis faucibus. Vivamus eget lacus id eros sollicitudin consequat. Vestibulum vel interdum
+                mi, quis eleifend neque. Mauris elementum lectus eget felis iaculis vestibulum. Morbi sed justo quis
+                nibh luctus dignissim. Phasellus sodales maximus nibh, in maximus leo suscipit ut. Nunc justo sem,
+                feugiat ut sem et, tempus efficitur risus. Maecenas sollicitudin, ligula vel vehicula porta, eros nibh
+                pharetra lacus, eu maximus diam sapien id sem.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+<footer style="margin-top: auto" class="row wt100p footer">
+    <img class="footer_logo" src="assets/Logo.svg" alt="">
+    <div class="footer_wrapper row">
+        <div class="column">
+            <h2>Каталог</h2>
+            <h3><a>Мох</a></h3>
+        </div>
+
+        <div class="column">
+            <h2>Документы</h2>
+            <h3><a>Реквизиты</a></h3>
+            <h3 style="width: 171px"><a>Политика конфиденциальности</a></h3>
+        </div>
+
+        <div class="column margin_for_mobile">
+            <h2>Компания</h2>
+            <h3><a>О «Moss»</a></h3>
+            <h3><a>Контакты</a></h3>
+            <h3><a>Соцсети</a></h3>
+        </div>
+
+        <div class="column margin_for_mobile" style="width: 171px; display: block">
+            <h2>Полезное</h2>
+            <h3><a>Частые вопросы</a></h3>
+        </div>
+
+        <div class="column gp10">
+            <div class="df_gp10_flace">
+                <img style="width: 30px; height: 30px" src="assets/PhoneIcon.svg" alt="">
+                <h2 style="margin-bottom: 0px">+7(962) 684-34-51</h2>
+            </div>
+
+            <div class="df_gp10_flace">
+                <img style="width: 30px; height: 30px; margin-top: 5px" src="assets/email.png" alt="">
+                <h2 style="margin-bottom: 0px">info@russianmoss.ru</h2>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
