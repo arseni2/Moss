@@ -23,6 +23,9 @@ let openBurgerMenu = () => {
 }
 
 let calcToKilo = () => {
+    if(event.target.classList.contains('btn_filled_disabled')) {
+        return
+    }
     event.target.classList.toggle('btn_filled_disabled')
     let calcBody = document.querySelector('#calc_body')
     let btnOther = document.querySelector('#calcToMetr')
@@ -38,6 +41,9 @@ let calcToKilo = () => {
 }
 
 let calcToMetrs = () => {
+    if(event.target.classList.contains('btn_filled_disabled')) {
+        return
+    }
     event.target.classList.toggle('btn_filled_disabled')
     let btnOther = document.querySelector('#calcToKilo')
     btnOther.classList.toggle('btn_filled_disabled')
