@@ -105,7 +105,7 @@ html {
     background: #F3F3F3;
 }
 
-input {
+input, select {
     font-size: 14px;
     background-color: #fff;
     font-family: 'Inter', sans-serif;
@@ -154,6 +154,10 @@ input:focus {
     outline: none;
 }
 
+select:focus {
+    outline: none;
+}
+
 section {
     margin-top: 100px;
     padding: 20px;
@@ -169,6 +173,17 @@ img {
 .wt100p {
     width: 100%;
 }
+
+.btn_filled_disabled {
+    user-select: none;
+    background-color: rgba(18, 110, 61, 0.5);
+    color: rgba(255, 255, 255, 0.5)
+}
+.btn_filled_disabled:hover {
+    background-color: rgba(18, 110, 61, 0.5);
+    color: rgba(255, 255, 255, 0.5)
+}
+
 
 .header {
     background: #FFF;
@@ -573,3 +588,18 @@ img {
         display: flex;
     }
 }
+@media screen and (max-width: 590px) {
+    .calc_header {
+        flex-direction: column;
+    }
+    .calc_footer {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: start;
+    }
+    .calc_footer > div {
+        width: 100%;
+    }
+}
+

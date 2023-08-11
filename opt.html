@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<section style="display: flex; align-items: center; flex-direction: column">
+    <h1>оптовый калькулятор</h1>
+    <div class="blk_wht" style="max-width: 800px; width: 100%">
+        <div class="row gap20 calc_header">
+            <div id="calcToKilo" onclick="calcToKilo()" class="btn_filled wt100p" style="max-width: 553px">
+                В киллограммах
+            </div>
+            <div id="calcToMetr" onclick="calcToMetrs()" class="btn_filled wt100p btn_filled_disabled" style="max-width: 553px">
+                В квадратных метрах
+            </div>
+        </div>
+        <div id="calc_body" class="row gap20 mt20" style="flex-wrap: wrap; max-width: 800px; width: 100%">
+            <input type="text" placeholder="Длина">
+            <input type="text" placeholder="Ширина">
+            <input type="text" placeholder="Кол-во">
+            <select>
+                <option>Зеленый</option>
+                <option>Красный</option>
+                <option>Синий</option>
+            </select>
+        </div>
+        <div class="btn_filled wt100p mt20">Рассчитать</div>
+        <div class="row mt20 align_center calc_footer" style="justify-content: space-between">
+            <h2 style="margin-bottom: 0;">Цена: 1000₽</h2>
+            <h2 style="margin-bottom: 0;">Кол-во мха: 10кг</h2>
+            <div class="btn_filled">Заказать</div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

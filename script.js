@@ -21,3 +21,34 @@ let openBurgerMenu = () => {
         popup.style.right = '-100%'
     }
 }
+
+let calcToKilo = () => {
+    event.target.classList.toggle('btn_filled_disabled')
+    let calcBody = document.querySelector('#calc_body')
+    let btnOther = document.querySelector('#calcToMetr')
+    btnOther.classList.toggle('btn_filled_disabled')
+    calcBody.innerHTML = ''
+    calcBody.innerHTML = '<input type="text" placeholder="Длина">\n' +
+        '            <input type="text" placeholder="Кол-во">\n' +
+        '            <select>\n' +
+        '                <option>Зеленый</option>\n' +
+        '                <option>Красный</option>\n' +
+        '                <option>Синий</option>\n' +
+        '            </select>'
+}
+
+let calcToMetrs = () => {
+    event.target.classList.toggle('btn_filled_disabled')
+    let btnOther = document.querySelector('#calcToKilo')
+    btnOther.classList.toggle('btn_filled_disabled')
+    let calcBody = document.querySelector('#calc_body')
+    calcBody.innerHTML = ''
+    calcBody.innerHTML = '<input type="text" placeholder="Длина">\n' +
+        '            <input type="text" placeholder="Ширина">\n' +
+        '            <input type="text" placeholder="Кол-во">\n' +
+        '            <select>\n' +
+        '                <option>Зеленый</option>\n' +
+        '                <option>Красный</option>\n' +
+        '                <option>Синий</option>\n' +
+        '            </select>'
+}
